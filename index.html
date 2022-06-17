@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="img/style.css">
+    <link rel="stylesheet" href="https://use.font-awesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Pagina WEb</title>
+</head>
+<body>
+<div class="head">
+    <div class="logo">
+        <a href="#">INF-161 Diseño y Administracion de Base de Datos</a>
+    </div>
+    <nav class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Reglas</a>
+        <a href="#">Futuro</a>
+        <a href="#">Contacto</a>
+    </nav>
+</div>
+
+
+
+<header class="content header">
+ <h2 class="title">Inicio</h2>
+<p>
+    Las nuevas tecnologías, relacionadas con nuestro entorno, 
+    están agilizando, optimizando y perfeccionando algunas 
+    actividades que realizamos en nuestro día a día. 
+    Pero no obstante para muchos esto sigue siendo un tabú, 
+    el cual les aterra la solo idea de pensar que una software 
+    unido a una maquina puede hacer algo mejor que nosotros o 
+    incluso sustituirnos. Sin embargo creo que somos personas 
+    inteligentes y podemos ir adaptándonos a esos cambios y 
+    dejar de temerle a una simple maquina
+</p>
+<div class="btn-home">
+    <a href="#" class="btn">Ir mas</a>
+    <a href="#" class="btn">Ir mas</a>
+    
+</div>
+
+
+
+</header>
+
+<section class="content about"> 
+</section>
+<section class="content about">
+   
+</section>
+
+<section>
+    <h2 class="title">Las reglas de codd</h2>
+</section>
+
+<section class="content sau">
+
+    <h2 class="title">Las Reglas de Codd</h2>
+    <p> En 1990 Codd se preocupó por los
+        SGBD que decían ser relacionales y no
+        lo eran. Había SGBD que utilizaban tablas, pero
+        no tablas relacionales.Incumplían las normas de las relaciones
+        definidas en su modelo. Por ello enunció 12 reglas que los SGBD
+        relacionales debían de cumplir. Pero, un SGBD es más relacional
+        cuantas más reglas cumpla
+
+
+    </p>
+        <div class="box-container">
+            
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 1: Informaciòn</h3>
+                 <p>Todos los datos deben estar almacenados en las tablas
+                    Esas tablas deben de cumplir las premisas del modelo
+                    relacional. No puede haber información a la que accedemos por
+                    otra vía</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 2:Acceso Garantizado</h3>
+                 <p>Cualquier dato es accesible sabiendo la clave de su fila y
+                    el nombre de su columna o atributo
+                    Por ejemplo el “Sánchez” es un dato al que podremos
+                    acceder conociendo la clave de la persona en concreto y
+                    usando el atributo “Primer apellido”
+                    Si a un dato no podemos acceder de esta forma, no
+                    estamos usando un modelo relacional</p>   
+            </div>
+
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 3: Tratamiento Roles</h3>
+                 <p>Esos valores pueden dar significado a la columna que los
+                    contiene (una persona sin teléfono, tendrá valor nulo en el
+                    teléfono)
+                    El SGBD tiene que tener la capacidad de manejar valores
+                    nulos
+                    El SGBD reconocerá este valor como un valor distinto de
+                    cualquier otro
+                    El SGBD sabrá aplicarle la lógica apropiada
+                    Es un valor independiente del tipo de datos de la columna</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 4: Catàlogo Relacional</h3>
+                 <p>El catálogo en línea es el diccionario de datos
+                    El diccionario de datos se debe de poder consultar
+                    usando las mismas técnicas que para los datos
+                    Los metadatos, por tanto, se organizan también en tablas
+                    relacionales
+                    Si SELECT es la instrucción que consulta datos, también
+                    será la que consulta los metadatos</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 5: Sublenguaje Completo</h3>
+                 <p>Al menos tiene que existir un lenguaje capaz de hacer
+                    todas las funciones del SGBD.
+                    No puede haber funciones fuera de ese lenguaje
+                    Puede haber otros lenguajes en el SGBD para hacer.
+                    ciertas tareas
+                    Pero esas tareas también se deben poder hacer con el
+                    “lenguaje completo”.</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 6: Vistas Actualizadas</h3>
+                 <p>gLas vistas tienen que mostrar información actualizada
+                    No puede haber diferencia entre los datos de las vistas y
+                    los datos de las tablas base</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 7: Inserciòn, modifica. elimina</h3>
+                 <p>La idea es que el lenguaje que maneja la BD sea muy
+                    humano
+                    Eso implica que las operaciones DML trabajen con
+                    conjuntos de filas a la vez
+                    Para modificar, eliminar o añadir datos no hará falta
+                    programar de la forma en la que lo hacen los lenguajes
+                    de tercera generación como C o Java</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 8: Independencia Fisica</h3>
+                 <p>Cambios en la física de la BD no afecta a las aplicaciones
+                    ni a los esquemas lógicos
+                    El acceso a las tablas (elemento lógico) no cambia porque
+                    la física de la base de datos cambie</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 9: Independencia Lògica</h3>
+                 <p>Cambios en el esquema lógico (tablas) de la BD no
+                    afectan al resto de esquemas
+                    Si cambiamos nombres de tabla, o de columna o
+                    modificamos información de las filas, las aplicaciones
+                    (esquema externo) no se ven afectadas
+                    Es más difícil de conseguir</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 10: Independencia de Integridad</h3>
+                 <p>Las reglas de integridad (restricciones) deben de ser
+                    gestionadas y almacenadas por el SGBD.</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 11: Independencia de Distribuciòn</h3>
+                 <p>Que la base de datos se almacene o gestione de forma
+                    distribuida en varios servidores, no afecta al uso de la
+                    misma ni a la programación de las aplicaciones de
+                    usuario. El esquema lógico es el mismo independientemente de si
+                    la BD es distribuida o no</p>   
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                 <h3>Regla 12: No Subersiòn</h3>
+                 <p>La base de datos no permitirá que exista un lenguaje o
+                    forma de acceso, que permita saltarse las reglas
+                    anteriores</p>   
+            </div>
+        </div>
+</section>
+<section class="content about">
+   
+</section>
+
+<section class="content about">
+   
+</section>
+
+<section class="content price">
+ <article>
+    <h2 class="title">FUTURO</h2>
+    <p>
+        La era digital llegó para quedarse y no hay 
+        manera de que retroceda, por el contrario, 
+        cada día podemos apreciar cómo la tecnología 
+        se va a apoderando de más rincones en nuestras 
+        vidas para mejorarla y hacerla más fácil. 
+        Ahora podemos acceder a diversas oportunidades 
+        gracias al manejo de las tecnologías y en el mundo 
+        digital, pero al mismo tiempo debemos reconocer 
+        la gran adicción que estas mismas herramientas nos crean.
+    </p>
+    <a href="#" class="btn">Ir mas</a>
+ </article>
+</section>
+<section class="content contact">
+    <h2 class="title">Contactos</h2>
+    <p>Cel: 1234567  -- Telf: 2222013333</p>
+    <div class="redes-container">
+        <ul>
+            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+            <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#" class="messenger"><i class="fab fa-facebook-messenger"></i></a></li>
+            <li><a href="#" class="google"><i class="fab fa-google-plus-g"></i></a></li>
+        </ul>
+
+    </div>
+</section>
+
+<footer>Las Reglas de Codd Elaborado por:  Estanislao Felipe  Mamani Mamani &STANNLY; 2022 Derechos Reservados</footer>  
+</body>
+</html>
